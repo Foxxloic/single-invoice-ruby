@@ -25,7 +25,7 @@ module SingleInvoice
 
         def environment=(environment)
             @environment = environment
-            self.api_uri = (environment == 'Production') ? 'https://api.single-invoice.co/v2.0' : 'https://api-demo.single-invoice.co'
+            self.api_uri = (environment == 'Production') ? 'https://api.single-invoice.co' : 'https://api-demo.single-invoice.co'
             @environment
         end
 
